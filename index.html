@@ -1,106 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Shriya Singh, an Electronics and Computer Engineering student.">
-  <meta name="keywords" content="Shriya Singh, Portfolio, Engineering, Business Analyst, Tech Enthusiast">
-  <title>Shriya Singh | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriya Singh Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 py-4 px-6 md:px-12 backdrop-blur-sm bg-black-bean/70">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold tracking-tight">Shriya.</a>
+            <div class="flex gap-6 text-sm">
+                <a href="#about" class="hover:text-new-york-pink">About</a>
+                <a href="#skills" class="hover:text-new-york-pink">Skills</a>
+                <a href="#projects" class="hover:text-new-york-pink">Projects</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Home -->
-    <section id="home" class="home">
-      <h1>✨ Hi, I'm Shriya Singh ✨</h1>
-      <p>Engineering Student | Aspiring Business Analyst | Tech Enthusiast</p>
+    <!-- Hero Section -->
+    <section id="home" class="flex items-center justify-center min-h-screen pt-24 pb-12 px-6 text-center gradient-bg">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                Hi, I'm <span class="typewriter">Shriya.</span>
+            </h1>
+            <p class="text-sm sm:text-md md:text-lg max-w-2xl mx-auto">
+                An aspiring software developer passionate about building beautiful and functional web experiences.
+            </p>
+            <div class="pt-6">
+                <a href="#projects" class="px-6 py-3 bg-white text-cordovan font-bold border-2 border-cordovan hover:bg-cordovan hover:text-white no-transition-hover">
+                    See My Work
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <h2 class="section-title">📜 About Me</h2>
-      <p>
-        I’m an Electronics and Computer Engineering student with a passion for blending 
-        technology and problem-solving. My journey is focused on mastering both development 
-        and business analysis, while building projects that make an impact.
-      </p>
+    <!-- About Me Section -->
+   <section id="about" class="min-h-screen flex items-center px-6 bg-cordovan">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">About Me</h2>
+        <div class="space-y-6">
+            <p>I am currently a B.Tech student in Electronics and Computer Engineering at <strong class="text-new-york-pink">Jaypee Institute of Information Technology, Noida</strong>. My journey into technology started with a fascination for solving complex problems through code.</p>
+            <p>My passion lies at the intersection of development and design. I'm actively learning front-end development to bring ideas to life on the web, and I'm also deeply interested in <strong class="text-new-york-pink">UI/UX design</strong>. I love creating intuitive and visually appealing user interfaces, using tools like Figma and Canva to prototype and perfect my designs.</p>
+            <p>My goal is to combine my problem-solving skills with a strong sense of design to build applications that are not only powerful but also a joy to use. I'm excited to continue my learning journey and contribute to innovative projects.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-marvelous text-black">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-2xl font-bold mb-12">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-8 border-2 border-gray-700 bg-black-bean hover:bg-gray-800 no-transition-hover text-white">
+                    <h3 class="text-xl font-bold mb-4">Programming Languages</h3>
+                    <ul class="text-sm list-none space-y-2 text-gray-300">
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="p-8 border-2 border-gray-700 bg-black-bean hover:bg-gray-800 no-transition-hover text-white">
+                    <h3 class="text-xl font-bold mb-4">Web Technologies</h3>
+                    <ul class="text-sm list-none space-y-2 text-gray-300">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="p-8 border-2 border-gray-700 bg-black-bean hover:bg-gray-800 no-transition-hover text-white">
+                    <h3 class="text-xl font-bold mb-4">Design & Others</h3>
+                    <ul class="text-sm list-none space-y-2 text-gray-300">
+                        <li>UI/UX Design</li>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="skills-section">
-      <h2 class="section-title">🕹️ Skills</h2>
-      <div class="skills-container">
-
-        <!-- Programming & Development -->
-        <div class="skills-card">
-          <h3>👾 Programming & Development</h3>
-          <h4>Languages</h4>
-          <div class="skills-tags">
-            <span>C++</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <h4>Version Control</h4>
-          <div class="skills-tags">
-            <span>Git</span><span>GitHub</span>
-          </div>
-          <h4>Tools</h4>
-          <div class="skills-tags">
-            <span>VS Code</span>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-new-york-pink text-black">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-2xl font-bold mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black-bean p-6 border-2 border-gray-800 hover:bg-gray-800 no-transition-hover text-white">
+                    <img src="folio.png" alt="Personal Portfolio" class="w-full mb-4">
+                    <h3 class="text-xl font-bold mb-2">Personal Portfolio</h3>
+                    <p class="text-gray-400 text-sm">My personal portfolio website built from scratch to showcase my skills and projects. Fully responsive and clean.</p>
+                </div>
+                <div class="bg-black-bean p-6 border-2 border-gray-800 hover:bg-gray-800 no-transition-hover text-white">
+                    <img src="https://placehold.co/600x400/FF0080/ffffff?text=Quiz+App" alt="Quiz App" class="w-full mb-4">
+                    <h3 class="text-xl font-bold mb-2">Snake Game</h3>
+                    <p class="text-gray-400 text-sm">Interactive snake game built with JavaScript. Simple, efficient, and fun to use.</p>
+                </div>
+                <div class="bg-black-bean p-6 border-2 border-gray-800 hover:bg-gray-800 no-transition-hover text-white">
+                    <img src="https://placehold.co/600x400/F59E0B/ffffff?text=E-commerce+Site" alt="E-commerce Site" class="w-full mb-4">
+                    <h3 class="text-xl font-bold mb-2">Expense Tracker</h3>
+                    <p class="text-gray-400 text-sm">Front-end mockup of an expense tracking platform with budget management and reporting features.</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Business & Analytical -->
-        <div class="skills-card">
-          <h3>📊 Business & Analytical</h3>
-          <h4>Microsoft Tools</h4>
-          <div class="skills-tags">
-            <span>Excel</span><span>PowerPoint</span><span>Visio</span>
-          </div>
-          <h4>BI Tools</h4>
-          <div class="skills-tags">
-            <span>Power BI</span>
-          </div>
-          <h4>Certifications</h4>
-          <div class="skills-tags">
-            <span>Microsoft Certified Business Analyst</span>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">🎮 Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal portfolio showcasing skills, projects, and achievements.</p>
-          <a href="your-portfolio-link.html" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <h3>Snake Game</h3>
-          <p>A classic Snake game built using JavaScript, HTML, and CSS.</p>
-          <a href="your-snake-game-link.html" class="btn">Play Game</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="py-6 px-6 text-center text-gray-500 bg-black-bean text-sm">
+        <p>&copy; 2025 Shriya Singh. All rights reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shriya Singh | Made with ❤️ in Pixel Style</p>
-  </footer>
-
-  <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
+
 </html>

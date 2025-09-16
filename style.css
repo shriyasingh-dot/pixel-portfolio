@@ -1,0 +1,56 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    scroll-behavior: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #0f172a;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.gradient-bg {
+    background-color: #1e3a8a;
+    background-image: linear-gradient(135deg, #3b82f6 50%, #1e40af 50%);
+}
+
+.no-transition-hover:hover {
+    transform: none !important;
+    scale: 1.0 !important;
+}
+
+.bg-black-bean {
+    background-color: #1e293b;
+}
+
+.bg-cordovan {
+    background-color: #3b82f6;
+}
+
+.bg-new-york-pink {
+    background-color: #2563eb;
+}
+
+.bg-marvelous {
+    background-color: #60a5fa;
+}
+
+.text-new-york-pink {
+    color: #60a5fa;
+}
+
+/* LIT NAVBAR */
+nav {
+    background-color: #3b82f6; /* Clear, nice blue shade */
+}
+
+/* About Me text spacing */
+#about p {
+    font-size: 1.125rem; /* slightly bigger than default */
+    line-height: 1.8;    /* more space between lines */
+    letter-spacing: 0.5px; /* subtle letter spacing */
+    max-width: 700px;    /* constrain width for better readability */
+    margin: 0 auto 1.5rem auto; /* center and add vertical spacing */
+}
+
